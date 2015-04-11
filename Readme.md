@@ -3,23 +3,22 @@
 ## Requires:
  - [HarpJS](http://harpjs.com/)
  - NodeJS
- - npm install -g bower
- - npm install -g bower-installer
+ - npm install -g component
 
 ## Local Server
- Se puede probar localmente haciedo:
- - `bower-installer`
- - harp server site
+ Se puede probar localmente haciedo dentro de /site
+ - `component install` instala las dependencias en /site/components    
+ - `component build`   buildea las dependencias en /site/build
+ - `harp server`       levanta un server local
 
 ## Deploy:
- Por el momento se debe hacer manualmente:
+ Por el momento se debe hacer manualmente desde /site:
 
- - `bower-installer` para incluir en site/libs únicamente lo necesario de cada depedencia
- - `harp compile ./site ./generated` genera el sitio estático
- - Push changes on ./generated to github pages.
+ - `component install`
+ - `component build`
+ - `harp compile . ../generated` genera el sitio estático
+ - Lo que queda en /generated se puede pushear a github pages o hostear estático.
 
-## TODOs
- - Automatizar tareas con gulp
 
 
 

@@ -1,0 +1,8 @@
+{
+  "name": "uqbar-site",
+  "dependencies": {
+    "components/bootstrap": "^3.3.4"
+  },
+  "scripts": ["index.js"],
+  "styles": ["index.css"]
+}

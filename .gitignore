@@ -2,7 +2,8 @@ generated
 client
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
-
+/site/components
+/site/build
 ## Directory-based project format:
 .idea/
 # if you remove the above rule, at least ignore the following:
