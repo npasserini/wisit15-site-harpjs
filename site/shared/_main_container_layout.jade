@@ -3,5 +3,9 @@ extends _main_layout
 block header
     != partial("../shared/menu/_menu")
 
+block content
+    .container.main-content
+        != yield
+
 block footer
     h2 footer
