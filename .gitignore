@@ -2,7 +2,7 @@ generated
 client
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
-/site/components
+components
 /site/build
 ## Directory-based project format:
 .idea/
