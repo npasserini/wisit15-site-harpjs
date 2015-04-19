@@ -23,10 +23,11 @@ git config user.email "travis@uqbar-project.com" || exit 1
 
 git add -A . || exit 1
 git commit --allow-empty -m "Regenerated static content for $CURRENT_COMMIT" || exit 1
-git push --force --quiet "$ORIGIN_URL_WITH_CREDENTIALS" gh-pages > /dev/null 2>&1
+#git push --force --quiet "$ORIGIN_URL_WITH_CREDENTIALS" gh-pages > /dev/null 2>&1
+git push --force "$ORIGIN_URL_WITH_CREDENTIALS" gh-pages
 
 echo "Cleaning up temp files"
-rm -Rf $TEMP_DIRECTORY
+rm -Rf ${TEMP_DIRECTORY}
 
 echo "Deployed successfully."
 exit 0
