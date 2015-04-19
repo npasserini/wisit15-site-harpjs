@@ -29,6 +29,8 @@ git add -A . || exit 1
 git commit --allow-empty -m "Generated static site for $CURRENT_COMMIT" || exit 1
 git remote set-url origin "$ORIGIN_URL_WITH_CREDENTIALS"
 #git push --force --quiet "$ORIGIN_URL_WITH_CREDENTIALS" gh-pages > /dev/null 2>&1
+git status
+ls -l
 git push -u --force origin master
 
 echo "Cleaning up temp files"
