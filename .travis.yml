@@ -4,8 +4,10 @@ node_js:
 before_script:
 - npm install -g component
 - npm install -g harp
-- component install ./site
-- component build ./site
+- cd site
+- component install
+- component build
+- cd ..
 - chmod +x ./deploy.sh
 script:
 - harp compile ./site ./tmp/__temp_static_content
