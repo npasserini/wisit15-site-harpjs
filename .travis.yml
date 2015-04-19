@@ -10,8 +10,10 @@ before_script:
 - cd ..
 - chmod +x ./deploy.sh
 script:
-- harp compile ./site ./tmp/__temp_static_content
-- cp .gitignore ./generated
+- mkdir /tmp/__temp_static_content
+- harp compile ./site /tmp/__temp_static_content
+- cp .gitignore /tmp/__temp_static_content
+- ls /tmp/__temp_static_content
 after_success: "./deploy.sh"
 env:
   global:
