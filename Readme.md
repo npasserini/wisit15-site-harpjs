@@ -1,9 +1,9 @@
 # Uqbar Site Generator
 
 ## Requires:
- - [HarpJS](http://harpjs.com/)
- - NodeJS
- - npm install -g component
+ - [NodeJS](https://nodejs.org/)
+ - [HarpJS](http://harpjs.com/) `npm install -g harp`
+ - [Component](https://github.com/componentjs/component) `npm install -g component`
 
 ## Local Server
  Se puede probar localmente haciedo dentro de /site
@@ -12,13 +12,13 @@
  - `harp server`       levanta un server local
 
 ## Deploy:
- Por el momento se debe hacer manualmente desde /site:
 
- - `component install`
- - `component build`
- - `harp compile . ../generated` genera el sitio estático
- - Lo que queda en /generated se puede pushear a github pages o hostear estático.
-
-
-
+### Travis CI
+ 
+ Todo lo que se suba a `master` va a ser buildeado por Travis-CI y pusheado a https://github.com/uqbar-project/uqbar-project.github.io
+ El sitio estático quedará servido en http://uqbar-project.github.io/home
+ 
+### Manual
+ 
+ También puede usarse directamente `deploy.sh` ,  siempre y cuando se agregue al entorno la variable `GITHUB_TOKEN` con el correspondiente token de acceso.
 
