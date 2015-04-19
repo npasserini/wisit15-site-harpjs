@@ -5,7 +5,7 @@ echo "Target: gh-pages branch"
 TEMP_DIRECTORY="/tmp/__temp_static_content"
 CURRENT_COMMIT=`git rev-parse HEAD`
 ORIGIN_URL=`git config --get remote.origin.url`
-ORIGIN_URL_WITH_CREDENTIALS=${ORIGIN_URL/\/\/github.com/\/\/$GITHUB_TOKEN@github.com}
+ORIGIN_URL_WITH_CREDENTIALS="https://${GITHUB_TOKEN}@github.com/uqbar-project/uqbar-site-harpjs.git"
 
 echo "Checking out gh-pages branch"
 git checkout -B gh-pages || exit 1
