@@ -27,7 +27,7 @@ git config user.email "travis@uqbar-project.com" || exit 1
 
 git add -A . || exit 1
 git commit --allow-empty -m "Generated static site for $CURRENT_COMMIT" || exit 1
-git remote add origin "$ORIGIN_URL_WITH_CREDENTIALS"
+git remote set-url origin "$ORIGIN_URL_WITH_CREDENTIALS"
 #git push --force --quiet "$ORIGIN_URL_WITH_CREDENTIALS" gh-pages > /dev/null 2>&1
 git push -u --force origin master
 
