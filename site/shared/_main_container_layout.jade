@@ -1,5 +1,8 @@
 extends _main_layout
 
+append styles
+    link(href="/shared/footer/footer.css" rel="stylesheet" )
+
 block header
     != partial("../shared/menu/_menu")
 
@@ -8,4 +11,4 @@ block content
         != yield
 
 block footer
-    h2 footer
+    != partial("../shared/footer/_footer")

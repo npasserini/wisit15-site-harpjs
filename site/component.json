@@ -2,7 +2,8 @@
   "name": "uqbar-site",
   "dependencies": {
     "components/bootstrap": "^3.3.4",
-    "components/bootstrap-default": "^3.2.0"
+    "components/bootstrap-default": "^3.2.0",
+    "AlvarezAriel/iscroll": "master"
   },
   "scripts": [
     "index.js"
