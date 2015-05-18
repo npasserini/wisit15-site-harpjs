@@ -5,6 +5,11 @@
  - [HarpJS](http://harpjs.com/) `npm install -g harp`
  - [Component](https://github.com/componentjs/component) `npm install -g component`
 
+## Cómo agregar contenido
+El html se genera a partir de templates [Jade](http://jade-lang.com/), y se utiliza [Stylus](https://learnboost.github.io/stylus/) para los estilos. Los archivos .md con markdown generan html, con lo cual el contenido de posts, descripciones, etc., pueden escribirse en Markdown.
+A su vez, los archivos json sirven para guardar información, que puede ser accedida desde los templates.
+Para una explicación más completa ver la [documentación de HarpJS](http://harpjs.com/docs/development/layout)
+
 ## Local Server
  Se puede probar localmente haciedo dentro de /site
  - `component install` instala las dependencias en /site/components    
