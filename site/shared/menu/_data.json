@@ -1,11 +1,10 @@
 {
   "sections":[
-    { "label":"Home",              "path":"/home"         },
-    { "label":"Teaching",          "path":"/teaching"     },
-    { "label":"Projects",          "path":"/projects"     },
-    { "label":"Publications",      "path":"/publications" },
-    { "label":"Events",            "path":"/events"       },
-    { "label":"Team and Contacts", "path":"/team"         },
-    { "label":"FAQ",               "path":"/faq"          }
+    { "label":"¿Qué es?",         "path":"/description" },
+    { "label":"Inscripción",      "path":"/register"    },
+    { "label":"Programa",         "path":"/program"     },
+    { "label":"Ubicación",        "path":"/location"    },
+    { "label":"Sponsors",         "path":"/sponsors"    },
+    { "label":"¿Quiénes somos?",  "path":"/team"        }
   ]
 }
