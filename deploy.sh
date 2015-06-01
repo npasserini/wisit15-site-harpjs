@@ -22,7 +22,7 @@ git config user.email "travis@uqbar-project.com" || exit 1
 git add --all
 git commit --allow-empty -m "Generated static site for $CURRENT_COMMIT" || exit 1
 git remote add origin "$ORIGIN_URL_WITH_CREDENTIALS"
-git push -u --force --quiet origin gh-pages > /dev/null 2>&1
+git push -u --force --quiet origin gh-pages
 
 echo "Cleaning up temp files"
 rm -Rf ${TEMP_DIRECTORY}
