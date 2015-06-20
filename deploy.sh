@@ -8,8 +8,9 @@ ORIGIN_URL_WITH_CREDENTIALS="https://${GITHUB_TOKEN}@${ORIGIN_URL}"
 
 echo "Compiling site into " ${TEMP_DIRECTORY}
 mkdir ${TEMP_DIRECTORY}
-harp compile ./site ${TEMP_DIRECTORY}
+harp compile -o ${TEMP_DIRECTORY}
 cp .gitignore ${TEMP_DIRECTORY}
+echo .gitignore >> ${TEMP_DIRECTORY}/.gitignore
 
 echo "Pushing into " ${ORIGIN_URL}
 cd ${TEMP_DIRECTORY}
